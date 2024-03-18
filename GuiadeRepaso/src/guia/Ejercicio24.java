@@ -19,7 +19,7 @@ public class Ejercicio24 {
 		boolean ordenado = true;
 		int i = 0;
 		while (i < v.length -1 && ordenado)  {
-			ordenado = v[i] > v[i+1];
+			ordenado = v[i] >= v[i+1];
 			i++;
 		}
 		return ordenado;
@@ -29,7 +29,13 @@ public class Ejercicio24 {
 	public static void main(String[] args) {
 		
 		int [] vectorito = {9,7,5,4,3,2,1};
-		estaOrdenado(vectorito);
+		int [] a = {1,1,1,1,1,1,1};
+		int [] cuatro = {4};
+		int [] desor = {1,6,7,3,2,5};
+		System.out.println(estaOrdenado(a));
+		System.out.println(estaOrdenado(vectorito));
+		System.out.println(estaOrdenado(cuatro));
+		System.out.println(estaOrdenado(desor));
 		
 	}
 
